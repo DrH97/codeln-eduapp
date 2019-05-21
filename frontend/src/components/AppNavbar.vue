@@ -74,6 +74,10 @@ export default {
   margin-bottom: 0;
 }
 
+.container {
+  margin-top: 300px;
+}
+
 .lead {
   font-size: xx-large;
 }
