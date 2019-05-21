@@ -1,26 +1,28 @@
 <template>
   <div id="app">
     <app-navbar></app-navbar>
-    <bottom-banner-infographic></bottom-banner-infographic>
-    <page-content></page-content>
+
+    <router-view/>
+
     <app-footer></app-footer>
-<!--    <router-view/>-->
   </div>
 </template>
 
 <script>
-import AppNavbar from './components/AppNavbar'
-import BottomBannerInfographic from './components/BottomBannerInfographic'
-import PageContent from '@/components/PageContent'
+import AppNavbar from '@/components/AppNavbar'
+// import BottomBannerInfographic from '@/components/BottomBannerInfographic'
+// import PageContent from '@/components/PageContent'
 import AppFooter from '@/components/AppFooter'
+// import CourseCard from '@/components/CourseCard'
 
 export default {
   name: 'App',
   components: {
+    // CourseCard,
     AppFooter,
-    PageContent,
-    AppNavbar,
-    BottomBannerInfographic
+    // PageContent,
+    AppNavbar
+    // BottomBannerInfographic
   }
 }
 </script>

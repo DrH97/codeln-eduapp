@@ -4,10 +4,10 @@
       <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">
-          <img src="../assets/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      <router-link to="/" class="navbar-brand" >
+        <img src="../assets/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
         Eduapp
-      </a>
+      </router-link>
       <div class="offcanvas-collapse navbar-collapse" id="navbarNavDropdown" style="text-align: center">
         <ul class="nav flex-column flex-sm-row nav-fill" style="width: -webkit-fill-available;">
           <li class="flex-sm-fill text-sm-center nav-item dropdown">
@@ -27,7 +27,7 @@
             </form>
           </li>
           <li class="flex-sm-fill text-sm-center nav-item">
-            <a class="nav-link text-white" href="#">tutormix for business</a>
+            <router-link to="/course-item" class="nav-link text-white" >tutormix for business</router-link>
           </li>
           <li class="flex-sm-fill text-sm-center nav-item">
             <a class="nav-link text-white" href="#">become a instructor</a>
@@ -40,12 +40,6 @@
         <a class="btn btn-danger btn-sm" href="#" role="button">Log In</a>
       </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container text-left text-white my-5 my-lg-5 pt-lg-5">
-        <h1 class="display-5 font-weight-bold">Learn everything</h1>
-        <p class="lead">Study what you want, explore for free</p>
-      </div>
-    </div>
   </div>
 
 </template>
@@ -65,20 +59,4 @@ export default {
     color: black;
   }
 
-.jumbotron {
-  background: url('../assets/banner.png') no-repeat;
-  background-size: cover;
-  height: 500px;
-  background-position: center;
-  margin-top: -60px;
-  margin-bottom: 0;
-}
-
-.container {
-  margin-top: 300px;
-}
-
-.lead {
-  font-size: xx-large;
-}
 </style>

@@ -3,10 +3,10 @@
 <!--    <div class="row">-->
       <ul class="nav row">
         <li class="col-4 text-left">
-          <a class="navbar-brand" href="#">
+          <router-link to="/" class="navbar-brand" >
             <img src="../assets/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-          Eduapp
-        </a>
+            Eduapp
+          </router-link>
         </li>
         <li class="col-4 pt-2 align-middle">
           <p>Copyright &copy; 2019 CodeLn</p>
@@ -41,5 +41,12 @@ export default {
 </script>
 
 <style scoped>
+.navbar-brand {
+  font-weight: bold;
+  color: rgba(255,255,255,.9);
+}
 
+a, p {
+  color: rgba(255,255,255,.9);
+}
 </style>

@@ -3,8 +3,7 @@
     <div class="row">
 
       <div class="col-md-8 offset-md-2">
-
-        Mastuff
+<!--        <course-card/>-->
       </div>
 
     </div>
@@ -12,8 +11,11 @@
 </template>
 
 <script>
+// import CourseCard from './CourseCard'
+
 export default {
   name: 'PageContent'
+  // components: {CourseCard}
 }
 </script>
 
